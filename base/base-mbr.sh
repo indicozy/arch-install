@@ -3,8 +3,8 @@
 ln -sf /usr/share/zoneinfo/Asia/Almaty /etc/localtime # TODO CHANGE TIME TO YOURS
 hwclock --systohc
 
-sed -i '177s/.//' /etc/locale.gen # TODO DISABLED BY DEFAULT, DO CONFIG ON YOUR OWN
-sed -i '402s/.//' /etc/locale.gen # TODO DISABLED BY DEFAULT, DO CONFIG ON YOUR OWN
+sed -i '177s/.//' /etc/locale.gen
+sed -i '402s/.//' /etc/locale.gen
 
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf # TODO CHANGE LANG TO YOURS
