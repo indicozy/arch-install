@@ -40,13 +40,4 @@ usermod -aG libvirt,wheel username # TODO CHANGE USERNAME
 
 echo "username ALL=(ALL) ALL" >> /etc/sudoers.d/username # TODO CHANGE USERNAME
 
-sudo timedatectl set-ntp true
-sudo hwclock --systohc
-
-sudo reflector -c Kazakhstan -a 6 --sort rate --save /etc/pacman.d/mirrorlist # TODO CHANGE TO YOUR COUNTRY
-
-sudo firewall-cmd --add-port=1025-65535/tcp --permanent
-sudo firewall-cmd --add-port=1025-65535/udp --permanent
-sudo firewall-cmd --reload
-
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
