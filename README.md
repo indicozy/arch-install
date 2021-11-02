@@ -82,23 +82,21 @@
   * Перепроверьте ваш fstab `cat /etc/fstab`
 4. Скачать, Настроить и Запустить скрипт
   * Скачать скрипт по `git clone https://github.com/indicozy/arch-install`
-  2. Настроить скрипт под себя, идите и читайте что делает каждая команда
-  3. `base/base-uefi.sh` или `base/base-mbr.sh`
-  4. `AUR/paru.sh` или `AUR/yay.sh`
-  5. Добавляете группу `wheel` в `sudo` через комманду `visudo` и строку `%wheel ALL=(ALL) ALL`
-  6. Один из Окружении в папке `DE`, после система сама перезагрузится
+  * Настроить скрипт под себя, идите и читайте что делает каждая команда
+  * `base/base-uefi.sh` или `base/base-mbr.sh`
+  * `AUR/paru.sh` или `AUR/yay.sh`
+  * Добавляете группу `wheel` в `sudo` через комманду `visudo` и строку `%wheel ALL=(ALL) ALL`
+  * Один из Окружении в папке `DE`, после система сама перезагрузится
 5. Установка Zram
-  1. Установить `paru` или `yay` для доступа к AUR
-  2. Установить `zramd` из AUR
-  3. Настроить его в `/etc/default/zramd`
-  4. Запустить через `sudo systemctl enable --now zramd`
+  * Установить `paru` или `yay` для доступа к AUR
+  * Установить `zramd` из AUR
+  * Настроить его в `/etc/default/zramd`
+  * Запустить через `sudo systemctl enable --now zramd`
 6. Установка Snapper
-  1. Установить `sudo pacman -S snapper`
-  2. Создать новую конфигурацию для субраздела `/` `sudo snapper -c root create-config /`
-  3. Изменить каждые обновления под себя: `TIMELINE_MIN_AGE="1800" TIMELINE_LIMIT_HOURLY="5" TIMELINE_LIMIT_DAILY="7" TIMELINE_LIMIT_WEEKLY="0" TIMELINE_LIMIT_MONTHLY="0" TIMELINE_LIMIT_YEARLY="0"`
-  4. Установить `snap-pac` (pacman) и `snap-pac-grub` (paru/yay) для снимков до и после обновлении и вывода снимков в меню GRUB
-
-
+  * Установить `sudo pacman -S snapper`
+  * Создать новую конфигурацию для субраздела `/` `sudo snapper -c root create-config /`
+  * Изменить каждые обновления под себя: `TIMELINE_MIN_AGE="1800" TIMELINE_LIMIT_HOURLY="5" TIMELINE_LIMIT_DAILY="7" TIMELINE_LIMIT_WEEKLY="0" TIMELINE_LIMIT_MONTHLY="0" TIMELINE_LIMIT_YEARLY="0"`
+  * Установить `snap-pac` (pacman) и `snap-pac-grub` (paru/yay) для снимков до и после обновлении и вывода снимков в меню GRUB
 
 [1] Альтернативные варианты разделов: 
 - https://www.nishantnadkarni.tech/posts/arch_installation/
