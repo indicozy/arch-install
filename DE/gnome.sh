@@ -11,9 +11,6 @@ sudo firewall-cmd --reload
 
 sudo pacman -S xorg gdm gnome gnome-extra firefox gnome-tweaks vlc 
 
-# sudo flatpak install -y spotify
-# sudo flatpak install -y kdenlive
-
 sudo systemctl enable gdm
 /bin/echo -e "\e[1;32mREBOOTING IN 5..4..3..2..1..\e[0m"
 sleep 5
