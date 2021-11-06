@@ -9,7 +9,13 @@ sudo firewall-cmd --add-port=1025-65535/tcp --permanent
 sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
-sudo pacman -S xorg wayland sddm plasma kde-applications plasma-wayland-session firefox vlc
+sudo pacman -S xorg wayland sddm plasma plasma-wayland-session firefox vlc
+
+# Установка других приложении KDE
+# sudo pacman -S kde-applications
+
+# Для пользователей NVIDIA
+# sudo pacman -S egl-wayland
 
 sudo systemctl enable sddm
 /bin/echo -e "\e[1;32mREBOOTING IN 5..4..3..2..1..\e[0m"
