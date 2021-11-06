@@ -175,6 +175,12 @@ TIMELINE_LIMIT_YEARLY="0"`
 yay/paru -S snap-pac snap-pac-grub
 ```
 
+## К чтению:
+- Улучшение производительности, лонгрид: https://wiki.archlinux.org/title/improving_performance
+
+Хотите добавить свое? Пишите тут в Issues или лично по https://t.me/indicozy
+
+# Ресурсы
 [1] Альтернативные варианты разделов: 
 - https://www.nishantnadkarni.tech/posts/arch_installation/
 - https://wiki.archlinux.org/title/snapper
@@ -183,11 +189,3 @@ yay/paru -S snap-pac snap-pac-grub
 - https://docs.google.com/spreadsheets/d/1x9-3OQF4ev1fOCrYuYWt1QmxYRmPilw_nLik5H_2_qA/edit#gid=0
 - https://github.com/facebook/zstd/blob/dev/contrib/linux-kernel/btrfs-benchmark.sh
 
-# Заметки (мне лень их прятать)
-https://wiki.archlinux.org/title/improving_performance
-grub-btrfs
-
-https://github.com/maximumadmin/zramd
-https://wiki.archlinux.org/title/snapper#Installation
-
-Добавить мультипоточную загрузку
