@@ -94,7 +94,7 @@ mount /dev/vda1 /mnt/boot/efi
 
 ## Установить ArchLinux на раздел `/mnt` и войти в него
 ``` bash
-pacstrap /mnt base base-devel linux linux-firmware git btrfs-progs {vim,nano} {intel-ucode,amd-ucode}` # в скобках  выбирайте под себя
+pacstrap /mnt base base-devel linux linux-firmware git btrfs-progs {vim,nano} {intel-ucode,amd-ucode}`
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 cat /etc/fstab # Перепроверить fstab
