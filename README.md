@@ -120,10 +120,12 @@ git clone https://github.com/indicozy/arch-install
 cd arch-install
 ```
 **Настройте скрипт под себя, идите и читайте что делает каждая команда**
+
 2. Запустите `base/base-uefi.sh` или `base/base-mbr.sh`, если у вас компьютер <2008 года то берите с `UEFI`
 ```
 ./base/base-uefi.sh
 ```
+
 3. Настройте `mkinitcpio`
 ```
 vim /etc/mkinitcpio.conf
@@ -134,16 +136,19 @@ vim /etc/mkinitcpio.conf
 ```
 mkinitcpio -p linux
 ```
+
 4. Перезагрузите компьтер через:
 ```
 exit
 umount -a
 reboot
 ```
+
 5. Установите пакетный менеджер для AUR с помощью `AUR/paru.sh` или `AUR/yay.sh`, они особо не отличаются но для новичков рекомендую `yay`
 ```
 ./AUR/yay.sh
 ```
+
 6. Установите один из Окружении в папке `DE`, после система сама перезагрузится
 ```
 ./DE/Все_что_угодно.sh
