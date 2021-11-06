@@ -175,6 +175,12 @@ TIMELINE_LIMIT_YEARLY="0"`
 yay/paru -S snap-pac snap-pac-grub
 ```
 
+## Опционально
+- Установить flatpak:
+```
+sudo pacman -S flatpak
+```
+
 ## К чтению:
 - Улучшение производительности, лонгрид: https://wiki.archlinux.org/title/improving_performance
 
