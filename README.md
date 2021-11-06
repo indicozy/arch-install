@@ -103,12 +103,12 @@ cat /etc/fstab # Перепроверить fstab
 ## Заранее подготовьте конфиги
 1. Добавляете группу `wheel` в `sudo` через комманду:
 ```
-visudo
+EDITOR=nano visudo
 ```
 и убираете комментарий со строки `%wheel ALL=(ALL) ALL`
 2. Установите многопоточность в `pacman`:
 ```
-vim /etc/pacman.conf
+nano /etc/pacman.conf
 ```
 Откомментируйте и поставьте свое значение в `ParallelDownloads = 10`
 
@@ -148,7 +148,7 @@ sudo pacman -S Snapper
 ```
 sudo snapper -c root create-config /
 ```
-3. Изменить каждые обновления под себя в файле `nvim /etc/snapper/configs/root`: 
+3. Изменить каждые обновления под себя в файле `/etc/snapper/configs/root`: 
 ```
 TIMELINE_MIN_AGE="1800"
 TIMELINE_LIMIT_HOURLY="3"
