@@ -208,7 +208,7 @@ sudo pacman -S flatpak
 ## К чтению:
 - Улучшение производительности, лонгрид: https://wiki.archlinux.org/title/improving_performance
 
-Хотите добавить свое? Пишите тут в Issues или лично по https://t.me/indicozy
+Хотите добавить свое? Пишите тут в Issues или лично по https://t.me/liberochat
 
 # Ресурсы
 [1] Альтернативные варианты разделов: 
