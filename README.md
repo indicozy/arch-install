@@ -199,9 +199,15 @@ TIMELINE_LIMIT_YEARLY="0"`
 yay/paru -S snap-pac snap-pac-grub
 ```
 
+Не забудьте включить демон snapper! Иначе ваши старые снимки не будут удаляться и будут весить до 70гб.
+```bash
+sudo systemctl enable snapper.timer
+sudo systemctl enable snapper-timeline.timer
+```
+
 ## Опционально
 - Установить flatpak:
-```
+```bash
 sudo pacman -S flatpak
 ```
 
